@@ -4,11 +4,11 @@ function that tests if a number is prime
 	return 1 if number is prime
 */
 
-int	ft_number_prime(int n)
+int	ft_number_prime(unsigned int n)
 {
 	int div;
 	
-	if (n == 1 || n == -1)
+	if (n <= 1)
 		return (0);
 	div = 2;
 	while (div < n)
